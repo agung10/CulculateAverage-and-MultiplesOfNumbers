@@ -16,5 +16,11 @@ print("\n")
 print(4 * "\t", "Menulis kelipatan bilangan")
 
 bil_bulat = eval(input("\nMasukan sebuah bilangan bulat : "))
+kelipatan = eval(input("Masukkan banyak kelipatan : "))
 
-print(bil_bulat*1, bil_bulat*2, bil_bulat*3, bil_bulat*4, bil_bulat*5, sep="---")
+for i in range(kelipatan):
+  i += 1
+  if (i == kelipatan):
+    print((bil_bulat * i), end="")
+    continue
+  print("{}---".format(bil_bulat * i), end="")
